@@ -635,3 +635,55 @@ a {
     margin-top: 15px;
   }
 }
+
+.bot-options {
+  display: grid;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.bot-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 11px 10px;
+  border: 1px solid var(--line);
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.bot-option:hover,
+.bot-option.active {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.bot-option-name,
+.bot-option-level {
+  font: 10px "DM Mono", monospace;
+  letter-spacing: .06em;
+}
+
+.bot-option-level {
+  color: var(--muted);
+  font-size: 9px;
+}
+
+.bot-option:hover .bot-option-level,
+.bot-option.active .bot-option-level {
+  color: #bcbcb7;
+}
+
+.bot-avatar.placeholder {
+  background: var(--ink);
+  color: var(--paper);
+  font: 700 10px "DM Mono", monospace;
+  letter-spacing: .05em;
+}
+
+.bot-avatar.placeholder:after {
+  content: attr(data-initial);
+}
