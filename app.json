@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Rep",
+    "slug": "republica-app",
+    "scheme": "republica",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": { "supportsTablet": false, "bundleIdentifier": "com.arturraimundi.republica" },
+    "android": { "package": "com.arturraimundi.republica" },
+    "web": { "bundler": "metro" },
+    "plugins": ["expo-router"],
+    "experiments": { "typedRoutes": false }
+  }
+}
